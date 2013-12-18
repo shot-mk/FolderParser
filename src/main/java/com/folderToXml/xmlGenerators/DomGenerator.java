@@ -1,7 +1,7 @@
-package xmlGenerators;
+package com.folderToXml.xmlGenerators;
 
-import DataHolder.FileInfo;
-import DataHolder.FolderInfo;
+import com.folderToXml.DataHolder.FileInfo;
+import com.folderToXml.DataHolder.FolderInfo;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import javax.xml.parsers.DocumentBuilder;
@@ -18,6 +18,7 @@ public class DomGenerator implements Generator {
     @Override
     public void generate(FolderInfo foldInfo, String outputPath) {
         try {
+
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document doc = builder.newDocument();

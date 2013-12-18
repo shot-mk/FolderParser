@@ -1,33 +1,23 @@
-package main;
+package com.folderToXml.main;
 
-import DataHolder.FileInfo;
-import DataHolder.FolderInfo;
-import com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import parsers.FolderParser;
-import xmlGenerators.DomGenerator;
-import xmlGenerators.Generator;
-import xmlGenerators.SaxGenerator;
+import com.folderToXml.DataHolder.FolderInfo;
+import com.folderToXml.parsers.FolderParser;
+import com.folderToXml.xmlGenerators.DomGenerator;
+import com.folderToXml.xmlGenerators.Generator;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.*;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.util.List;
+import java.nio.file.Files;
 
 public class Main {
     public static void main(String args[]) throws ParserConfigurationException, TransformerException, FileNotFoundException {
-        File folder= new File("D:/test");
+        File folder= new File("/home/nikita/.pki");
         FolderParser parser = new FolderParser();
-        FolderInfo fInfo = parser.parse("D:/MyMovies");
-        Generator generator = new SaxGenerator();
-        generator.generate(fInfo,"D:/test1.xml");
+        FolderInfo fInfo = parser.parse("/home/nikita/.pki");
+        Generator generator = new DomGenerator();
+        generator.generate(fInfo,"/home/nikita/test1.xml");
 
 
 

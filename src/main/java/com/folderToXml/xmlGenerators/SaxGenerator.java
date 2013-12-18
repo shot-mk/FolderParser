@@ -1,7 +1,7 @@
-package xmlGenerators;
+package com.folderToXml.xmlGenerators;
 
-import DataHolder.FileInfo;
-import DataHolder.FolderInfo;
+import com.folderToXml.DataHolder.FileInfo;
+import com.folderToXml.DataHolder.FolderInfo;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.AttributesImpl;
 import javax.xml.transform.OutputKeys;

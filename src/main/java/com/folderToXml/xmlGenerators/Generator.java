@@ -1,6 +1,6 @@
-package xmlGenerators;
+package com.folderToXml.xmlGenerators;
 
-import DataHolder.FolderInfo;
+import com.folderToXml.DataHolder.FolderInfo;
 
 /**
  * Created with IntelliJ IDEA.

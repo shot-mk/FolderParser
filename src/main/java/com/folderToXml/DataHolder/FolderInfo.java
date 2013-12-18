@@ -1,4 +1,4 @@
-package DataHolder;
+package com.folderToXml.DataHolder;
 import java.util.List;
 
 public class FolderInfo {

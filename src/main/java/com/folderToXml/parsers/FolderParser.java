@@ -1,8 +1,10 @@
-package parsers;
+package com.folderToXml.parsers;
 
-import DataHolder.FileInfo;
-import DataHolder.FolderInfo;
+import com.folderToXml.DataHolder.FileInfo;
+import com.folderToXml.DataHolder.FolderInfo;
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -24,7 +26,12 @@ public class FolderParser {
             folders = new LinkedList<FolderInfo>();
             for (int i = 0; i < content.length; i++) {
                 if(content[i].isFile()){
-                    FileInfo newFile = getFileInfo(content[i].getPath());
+                    FileInfo newFile = null;
+                    try {
+                        newFile = getFileInfo(content[i].getPath());
+                    } catch (IOException e) {
+                        System.out.println("IOException " + e.getMessage());
+                    }
                     files.add(newFile);
                 }
                 if(content[i].isDirectory()){
@@ -39,7 +46,7 @@ public class FolderParser {
         return new FolderInfo(name, path, isEmpty, files, folders);
     }
 
-    public FileInfo getFileInfo(String fpath) {
+    public FileInfo getFileInfo(String fpath) throws IOException {
         File file = new File(fpath);
         String path = fpath;
         String name;
@@ -48,11 +55,10 @@ public class FolderParser {
         int dotPosition = fullName.lastIndexOf(".") + 1;
         if(dotPosition == -1){
             name = fullName;
-            type = "Unknown";
         } else {
             name = fullName.substring(0, dotPosition - 1);
-            type = fullName.substring(dotPosition);
         }
+        type = Files.probeContentType(file.toPath());
         long size = file.length();
         return new FileInfo(name, type, path, size);
     }

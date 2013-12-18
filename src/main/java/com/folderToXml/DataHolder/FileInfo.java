@@ -1,4 +1,4 @@
-package DataHolder;
+package com.folderToXml.DataHolder;
 
 public class FileInfo {
     public final String name;
