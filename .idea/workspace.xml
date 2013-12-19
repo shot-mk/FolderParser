@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5da33012-58f1-4d28-9ec7-c693d0de9984" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/JaxbGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/DomGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/DomGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FolderParser.iml" afterPath="$PROJECT_DIR$/FolderParser.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/parsers/FolderParser.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/parsers/FolderParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/Generator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/Generator.java" />
+      <change type="MODIFICATION" beforePath="D:\JavaProgramming\FolderParser\src\main\java\com\folderToXml\dataHolder\FileInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/dataHolder/FileInfo.java" />
+      <change type="MODIFICATION" beforePath="D:\JavaProgramming\FolderParser\src\main\java\com\folderToXml\dataHolder\FolderInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/dataHolder/FolderInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/JaxbGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/JaxbGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/SaxGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/SaxGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="D:\JavaProgramming\FolderParser\src\main\java\com\folderToXml\main\Main.java" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FolderParser.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +23,7 @@
     <file path="$PROJECT_DIR$/../test/src/GenerateUsingTransformerHandler.java" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387305913785" ignored="false" />
     <file path="$PROJECT_DIR$/../test/src/Mainclass.java" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387307505359" ignored="false" />
     <file path="/Mainclass.java" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387307494606" ignored="false" />
-    <file path="/Dummy.txt" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387484377781" ignored="false" />
+    <file path="/Dummy.txt" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387487981768" ignored="false" />
     <file path="/FileInfo.java" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387487559659" ignored="false" />
     <file path="/JaxbGenerator.java" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387486220380" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -131,16 +127,16 @@
       <file leaf-file-name="SaxGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/SaxGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="90" selection-start="1588" selection-end="1665" vertical-scroll-proportion="0.0">
+            <state line="39" column="9" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JaxbGenerator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="JaxbGenerator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/JaxbGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="74" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
+            <state line="22" column="21" selection-start="807" selection-end="807" vertical-scroll-proportion="0.6714542">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,10 +144,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileInfo.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FileInfo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/dataHolder/FileInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="42" selection-start="589" selection-end="589" vertical-scroll-proportion="0.7324955">
+            <state line="24" column="42" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -204,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/DataHolder/MyFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataHolder/Fileinfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/xmlGenerators/Generator.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataHolder/FileInfo.java" />
@@ -217,9 +212,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/folderToXml/parsers/FolderParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/DomGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/JaxbGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/folderToXml/dataHolder/FolderInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/folderToXml/dataHolder/FileInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/JaxbGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/SaxGenerator.java" />
       </list>
     </option>
   </component>
@@ -664,7 +660,11 @@
       <created>1387308856690</created>
       <updated>1387308856690</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="123">
+      <created>1387487984555</created>
+      <updated>1387487984555</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -834,39 +834,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="271" selection-end="332" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="37" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/SaxGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="90" selection-start="1588" selection-end="1665" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/DomGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="12" selection-start="1863" selection-end="1926" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/JaxbGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="74" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -884,8 +854,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/dataHolder/FileInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="42" selection-start="589" selection-end="589" vertical-scroll-proportion="0.7324955">
+        <state line="24" column="42" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/DomGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="12" selection-start="1863" selection-end="1926" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="4" selection-start="271" selection-end="332" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/SaxGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="9" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/JaxbGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="21" selection-start="807" selection-end="807" vertical-scroll-proportion="0.6714542">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

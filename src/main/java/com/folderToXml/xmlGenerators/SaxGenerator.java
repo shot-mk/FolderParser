@@ -35,11 +35,9 @@ public class SaxGenerator implements Generator {
             handler.endDocument();
         } catch (TransformerConfigurationException e) {
             System.out.println("Transformer Configuration Exception: " + e.getMessage());
-        }
-        catch (SAXException e) {
+        } catch (SAXException e) {
             System.out.println("SAX Exception: " + e.getMessage());
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("IO Exception: " + e.getMessage());
         }
     }
