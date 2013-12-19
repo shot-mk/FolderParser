@@ -1,7 +1,7 @@
 package com.folderToXml.parsers;
 
-import com.folderToXml.DataHolder.FileInfo;
-import com.folderToXml.DataHolder.FolderInfo;
+import com.folderToXml.dataHolder.FileInfo;
+import com.folderToXml.dataHolder.FolderInfo;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -53,7 +53,7 @@ public class FolderParser {
         String type;
         String fullName = file.getName();
         int dotPosition = fullName.lastIndexOf(".") + 1;
-        if(dotPosition == -1){
+        if(dotPosition == 0){
             name = fullName;
         } else {
             name = fullName.substring(0, dotPosition - 1);

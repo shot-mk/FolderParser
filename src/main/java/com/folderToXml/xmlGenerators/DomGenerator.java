@@ -1,7 +1,7 @@
 package com.folderToXml.xmlGenerators;
 
-import com.folderToXml.DataHolder.FileInfo;
-import com.folderToXml.DataHolder.FolderInfo;
+import com.folderToXml.dataHolder.FileInfo;
+import com.folderToXml.dataHolder.FolderInfo;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import javax.xml.parsers.DocumentBuilder;
@@ -32,13 +32,13 @@ public class DomGenerator implements Generator {
             transformer.transform(s, res);
 
         }  catch (ParserConfigurationException e) {
-            e.printStackTrace();
+            System.out.println("Parser Configuration Exception: " + e.getMessage());
         }  catch (TransformerConfigurationException e) {
-            e.printStackTrace();
+            System.out.println("Transformer Configuration Exception: " + e.getMessage());
         }  catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.out.println("File Not Found Exception: " + e.getMessage());
         }  catch (TransformerException e) {
-            e.printStackTrace();
+            System.out.println("Transformer Exception: " + e.getMessage());
         }
     }
 
