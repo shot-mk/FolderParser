@@ -4,6 +4,7 @@ import com.folderToXml.dataHolder.FileInfo;
 import com.folderToXml.dataHolder.FolderInfo;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.AttributesImpl;
+
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
@@ -31,7 +32,7 @@ public class SaxGenerator implements Generator {
             transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
             handler.setResult(result);
             handler.startDocument();
-            folderGenerator(handler,foldInfo);
+            folderGenerator(handler, foldInfo);
             handler.endDocument();
         } catch (TransformerConfigurationException e) {
             System.out.println("Transformer Configuration Exception: " + e.getMessage());
@@ -44,20 +45,20 @@ public class SaxGenerator implements Generator {
 
     private TransformerHandler folderGenerator(TransformerHandler handler, FolderInfo fInfo) throws SAXException {
         AttributesImpl nameAtt = new AttributesImpl();
-        nameAtt.addAttribute("","name","name","CDATA",fInfo.name);
-        handler.startElement("","dir","dir",nameAtt);
+        nameAtt.addAttribute("", "name", "name", "CDATA", fInfo.name);
+        handler.startElement("", "dir", "dir", nameAtt);
         for (FileInfo file : fInfo.files) {
             AttributesImpl fileAtt = new AttributesImpl();
-            fileAtt.addAttribute("","name","name","CDATA",file.name);
-            fileAtt.addAttribute("","size","size","CDATA",file.size+"b");
-            fileAtt.addAttribute("","type","type","CDATA",file.type);
-            handler.startElement("","file","file",fileAtt);
-            handler.endElement("","file","file");
+            fileAtt.addAttribute("", "name", "name", "CDATA", file.name);
+            fileAtt.addAttribute("", "size", "size", "CDATA", file.size + "b");
+            fileAtt.addAttribute("", "type", "type", "CDATA", file.type);
+            handler.startElement("", "file", "file", fileAtt);
+            handler.endElement("", "file", "file");
         }
         for (FolderInfo folder : fInfo.folders) {
-            folderGenerator(handler,folder);
+            folderGenerator(handler, folder);
         }
-        handler.endElement("","dir","dir");
+        handler.endElement("", "dir", "dir");
         return handler;
     }
 }

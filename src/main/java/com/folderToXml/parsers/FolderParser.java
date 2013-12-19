@@ -2,6 +2,7 @@ package com.folderToXml.parsers;
 
 import com.folderToXml.dataHolder.FileInfo;
 import com.folderToXml.dataHolder.FolderInfo;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -21,11 +22,11 @@ public class FolderParser {
         List<FileInfo> files = null;
         List<FolderInfo> folders = null;
         boolean isEmpty;
-        if(content.length != 0 ) {
+        if (content.length != 0) {
             files = new LinkedList<FileInfo>();
             folders = new LinkedList<FolderInfo>();
             for (int i = 0; i < content.length; i++) {
-                if(content[i].isFile()){
+                if (content[i].isFile()) {
                     FileInfo newFile = null;
                     try {
                         newFile = getFileInfo(content[i].getPath());
@@ -34,7 +35,7 @@ public class FolderParser {
                     }
                     files.add(newFile);
                 }
-                if(content[i].isDirectory()){
+                if (content[i].isDirectory()) {
                     FolderInfo newFolder = getFolderInfo(content[i].getPath());
                     folders.add(newFolder);
                 }
@@ -43,7 +44,7 @@ public class FolderParser {
         } else {
             isEmpty = true;
         }
-        return new FolderInfo(name, path, isEmpty, files, folders);
+        return new FolderInfo(name, isEmpty, files, folders);
     }
 
     public FileInfo getFileInfo(String fpath) throws IOException {
@@ -53,14 +54,14 @@ public class FolderParser {
         String type;
         String fullName = file.getName();
         int dotPosition = fullName.lastIndexOf(".") + 1;
-        if(dotPosition == 0){
+        if (dotPosition == 0) {
             name = fullName;
         } else {
             name = fullName.substring(0, dotPosition - 1);
         }
         type = Files.probeContentType(file.toPath());
         long size = file.length();
-        return new FileInfo(name, type, path, size);
+        return new FileInfo(name, type, size);
     }
 
 }

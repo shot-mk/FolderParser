@@ -4,6 +4,7 @@ import com.folderToXml.dataHolder.FileInfo;
 import com.folderToXml.dataHolder.FolderInfo;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -31,13 +32,13 @@ public class DomGenerator implements Generator {
             Result res = new StreamResult(new FileOutputStream(outputPath));
             transformer.transform(s, res);
 
-        }  catch (ParserConfigurationException e) {
+        } catch (ParserConfigurationException e) {
             System.out.println("Parser Configuration Exception: " + e.getMessage());
-        }  catch (TransformerConfigurationException e) {
+        } catch (TransformerConfigurationException e) {
             System.out.println("Transformer Configuration Exception: " + e.getMessage());
-        }  catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             System.out.println("File Not Found Exception: " + e.getMessage());
-        }  catch (TransformerException e) {
+        } catch (TransformerException e) {
             System.out.println("Transformer Exception: " + e.getMessage());
         }
     }
@@ -45,11 +46,11 @@ public class DomGenerator implements Generator {
     private Element folderGenerate(FolderInfo fInfo, Document doc) {
         Element folder = doc.createElement("dir");
         folder.setAttribute("name", fInfo.name);
-        if(!fInfo.isEmpty){
+        if (!fInfo.isEmpty) {
             for (FileInfo file : fInfo.files) {
                 Element includedFile = doc.createElement("file");
-                includedFile.setAttribute("name" , file.name);
-                includedFile.setAttribute("type" , file.type);
+                includedFile.setAttribute("name", file.name);
+                includedFile.setAttribute("type", file.type);
                 includedFile.setAttribute("size", file.size + "b");
                 folder.appendChild(includedFile);
             }
