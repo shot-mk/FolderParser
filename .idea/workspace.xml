@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5da33012-58f1-4d28-9ec7-c693d0de9984" name="Default" comment="123">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/DomGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/DomGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/parsers/FolderParser.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/parsers/FolderParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/Generator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/Generator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/JaxbGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/JaxbGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/SaxGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/SaxGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/XstreamGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/XstreamGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="5da33012-58f1-4d28-9ec7-c693d0de9984" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="D:\JavaProgramming\FolderParser\src\main\java\com\folderToXml\dataHolder\FileInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/dataHolder/FileInfo.java" />
+      <change type="MODIFICATION" beforePath="D:\JavaProgramming\FolderParser\src\main\java\com\folderToXml\dataHolder\FolderInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/dataHolder/FolderInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FolderParser.iws" />
@@ -26,7 +21,7 @@
     <file path="$PROJECT_DIR$/../test/src/GenerateUsingTransformerHandler.java" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387305913785" ignored="false" />
     <file path="$PROJECT_DIR$/../test/src/Mainclass.java" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387307505359" ignored="false" />
     <file path="/Mainclass.java" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387307494606" ignored="false" />
-    <file path="/Dummy.txt" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387550153758" ignored="false" />
+    <file path="/Dummy.txt" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387551919474" ignored="false" />
     <file path="/FileInfo.java" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387549344381" ignored="false" />
     <file path="/JaxbGenerator.java" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387550938222" ignored="false" />
     <file path="/XstreamGenerator.java" changelist="5da33012-58f1-4d28-9ec7-c693d0de9984" time="1387551013962" ignored="false" />
@@ -126,7 +121,7 @@
       <file leaf-file-name="Generator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="43" selection-start="259" selection-end="259" vertical-scroll-proportion="0.32409012">
+            <state line="11" column="28" selection-start="259" selection-end="259" vertical-scroll-proportion="0.32409012">
               <folding />
             </state>
           </provider>
@@ -373,100 +368,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="folderToXml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlGenerators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="folderToXml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parsers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="folderToXml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dataHolder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -677,7 +578,11 @@
       <created>1387490545866</created>
       <updated>1387490545866</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="123">
+      <created>1387551921798</created>
+      <updated>1387551921798</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -903,7 +808,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="259" selection-end="259" vertical-scroll-proportion="0.32409012">
+        <state line="11" column="28" selection-start="259" selection-end="259" vertical-scroll-proportion="0.32409012">
           <folding />
         </state>
       </provider>
