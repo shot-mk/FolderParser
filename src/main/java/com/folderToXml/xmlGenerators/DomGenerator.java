@@ -14,8 +14,17 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
+/**
+ * Generates xml document from container-object using DOM model
+ * @see FolderInfo
+ */
 public class DomGenerator implements Generator {
-
+    /**
+     * Generates xml document from container-object  to output path
+     * @see FolderInfo
+     * @param foldInfo This folder data
+     * @param outputPath Path where to save xml document
+     */
     @Override
     public void generate(FolderInfo foldInfo, String outputPath) {
         try {
@@ -43,6 +52,14 @@ public class DomGenerator implements Generator {
         }
     }
 
+    /**
+     * Generates current folder Element  and sets attributes
+     * @see org.w3c.dom.Element
+     * @see org.w3c.dom.Document
+     * @param fInfo current FolderInfo @see FolderInfo
+     * @param doc current document
+     * @return folder Element
+     */
     private Element folderGenerate(FolderInfo fInfo, Document doc) {
         Element folder = doc.createElement("dir");
         folder.setAttribute("name", fInfo.name);

@@ -3,11 +3,8 @@ package com.folderToXml.xmlGenerators;
 import com.folderToXml.dataHolder.FolderInfo;
 
 /**
- * Created with IntelliJ IDEA.
- * User: shot
- * Date: 17.12.13
- * Time: 18:38
- * To change this template use File | Settings | File Templates.
+ * Generates xml document from container object
+ * @see FolderInfo
  */
 public interface Generator {
     public void generate(FolderInfo foldInfo, String outputPath);

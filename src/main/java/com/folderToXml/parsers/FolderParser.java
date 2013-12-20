@@ -9,13 +9,26 @@ import java.nio.file.Files;
 import java.util.LinkedList;
 import java.util.List;
 
-
+/**
+ * Собирает информацию о папке, вложеных папках и файлах
+ */
 public class FolderParser {
+    /**
+     * Calls a function that collect information about the folder
+     * @param path Folder path
+     * @return Container-object with information about the folder
+     */
     public FolderInfo parse(String path) {
         return getFolderInfo(path);
     }
 
-    public FolderInfo getFolderInfo(String path) {
+    /**
+     * Collect information about this folder and write it to container-object
+     * @see FolderInfo
+     * @param path Folder path
+     * @return  Container-object for this folder
+     */
+    private FolderInfo getFolderInfo(String path) {
         File folder = new File(path);
         String name = folder.getName();
         File[] content = folder.listFiles();
@@ -46,8 +59,14 @@ public class FolderParser {
         }
         return new FolderInfo(name, isEmpty, files, folders);
     }
-
-    public FileInfo getFileInfo(String fpath) throws IOException {
+    /**
+     * Collect information about this file and write it to container-object
+     * @see FileInfo
+     * @param fpath File path
+     * @return  Container-object for this file
+     * @throws IOException if file with this path don't exist
+     */
+    private FileInfo getFileInfo(String fpath) throws IOException {
         File file = new File(fpath);
         String path = fpath;
         String name;

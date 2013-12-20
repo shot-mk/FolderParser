@@ -16,8 +16,18 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * Generates xml document from container-object using SAX model
+ * @see FolderInfo
+ */
 public class SaxGenerator implements Generator {
 
+    /**
+     * Generates xml document from container-object  to output path
+     * @see FolderInfo
+     * @param foldInfo This folder data
+     * @param outputPath Path where to save xml document
+     */
     @Override
     public void generate(FolderInfo foldInfo, String outputPath) {
         try {
@@ -42,6 +52,7 @@ public class SaxGenerator implements Generator {
             System.out.println("IO Exception: " + e.getMessage());
         }
     }
+
 
     private TransformerHandler folderGenerator(TransformerHandler handler, FolderInfo fInfo) throws SAXException {
         AttributesImpl nameAtt = new AttributesImpl();

@@ -7,8 +7,18 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import java.io.File;
 
+/**
+ * Generates xml document from container-object using JAXB model
+ * @see FolderInfo
+ */
 public class JaxbGenerator implements Generator {
 
+    /**
+     * Generates xml document from container-object  to output path
+     * @see FolderInfo
+     * @param foldInfo This folder data
+     * @param outputPath Path where to save xml document
+     */
     public void generate(FolderInfo foldInfo, String outputPath) {
         try {
             File file = new File(outputPath);

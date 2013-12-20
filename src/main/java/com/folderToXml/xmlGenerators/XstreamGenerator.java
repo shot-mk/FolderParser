@@ -7,8 +7,19 @@ import com.thoughtworks.xstream.XStream;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * Generates xml document from container-object using Xstream
+ * @see FolderInfo
+ */
 public class XstreamGenerator implements Generator {
 
+
+    /**
+     * Generates xml document from container-object  to output path
+     * @see FolderInfo
+     * @param foldInfo This folder data
+     * @param outputPath Path where to save xml document
+     */
     @Override
     public void generate(FolderInfo foldInfo, String outputPath) {
         XStream xstream = new XStream();
@@ -28,7 +39,6 @@ public class XstreamGenerator implements Generator {
         } catch (IOException e) {
             System.out.println("IOException." + e.getMessage());
         }
-
         xstream.toXML(foldInfo, writer);
     }
 }
