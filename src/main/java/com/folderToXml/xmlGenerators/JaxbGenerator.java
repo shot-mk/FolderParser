@@ -1,9 +1,9 @@
 package com.folderToXml.xmlGenerators;
 
 import com.folderToXml.dataHolder.FolderInfo;
+import com.folderToXml.exceptions.GeneratorException;
 
 import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import java.io.File;
 
@@ -17,8 +17,9 @@ public class JaxbGenerator implements Generator {
      * @see FolderInfo
      * @param foldInfo This folder data
      * @param outputPath Path where to save xml document
+     * @throws GeneratorException
      */
-    public void generate(FolderInfo foldInfo, String outputPath) {
+    public void generate(FolderInfo foldInfo, String outputPath) throws GeneratorException{
         try {
             File file = new File(outputPath);
             JAXBContext jaxbContext = JAXBContext.newInstance(FolderInfo.class);
@@ -26,8 +27,8 @@ public class JaxbGenerator implements Generator {
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             jaxbMarshaller.marshal(foldInfo, file);
 
-        } catch (JAXBException e) {
-            System.out.println("JAXBException Exception: " + e.getMessage());
+        } catch (Exception e) {
+            throw new GeneratorException(e);
         }
     }
 

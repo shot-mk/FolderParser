@@ -2,16 +2,15 @@ package com.folderToXml.xmlGenerators;
 
 import com.folderToXml.dataHolder.FileInfo;
 import com.folderToXml.dataHolder.FolderInfo;
+import com.folderToXml.exceptions.GeneratorException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 /**
@@ -22,12 +21,12 @@ public class DomGenerator implements Generator {
      * Generates xml document from container-object  to output path
      * @param foldInfo This folder data
      * @param outputPath Path where to save xml document
+     * @throws GeneratorException
      * @see FolderInfo
      */
     @Override
-    public void generate(FolderInfo foldInfo, String outputPath) {
+    public void generate(FolderInfo foldInfo, String outputPath) throws GeneratorException{
         try {
-
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document doc = builder.newDocument();
@@ -39,15 +38,8 @@ public class DomGenerator implements Generator {
             Source s = new DOMSource(doc);
             Result res = new StreamResult(new FileOutputStream(outputPath));
             transformer.transform(s, res);
-
-        } catch (ParserConfigurationException e) {
-            System.out.println("Parser Configuration Exception: " + e.getMessage());
-        } catch (TransformerConfigurationException e) {
-            System.out.println("Transformer Configuration Exception: " + e.getMessage());
-        } catch (FileNotFoundException e) {
-            System.out.println("File Not Found Exception: " + e.getMessage());
-        } catch (TransformerException e) {
-            System.out.println("Transformer Exception: " + e.getMessage());
+        } catch (Exception e) {
+            throw new GeneratorException(e);
         }
     }
 

@@ -1,21 +1,23 @@
 package main;
 
 import com.folderToXml.dataHolder.FolderInfo;
+import com.folderToXml.exceptions.GeneratorException;
 import com.folderToXml.parsers.FolderParser;
 import com.folderToXml.xmlGenerators.Generator;
 import com.folderToXml.xmlGenerators.JaxbGenerator;
 
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.TransformerException;
 import java.io.File;
-import java.io.FileNotFoundException;
 
 public class Main {
-    public static void main(String args[]) throws ParserConfigurationException, TransformerException, FileNotFoundException {
-        File folder = new File("D:/1");
+    public static void main(String args[])  {
+        File folder = new File("testfolder");
         FolderParser parser = new FolderParser();
-        FolderInfo fInfo = parser.parse("D:/Музыка");
+        FolderInfo fInfo = parser.parse("testfolder");
         Generator generator = new JaxbGenerator();
-        generator.generate(fInfo, "D:/test1.xml");
+        try {
+            generator.generate(fInfo, "/home/nikita/test1.xml");
+        } catch (GeneratorException e) {
+            e.printStackTrace();
+        }
     }
 }

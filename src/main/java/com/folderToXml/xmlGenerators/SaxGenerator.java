@@ -2,19 +2,18 @@ package com.folderToXml.xmlGenerators;
 
 import com.folderToXml.dataHolder.FileInfo;
 import com.folderToXml.dataHolder.FolderInfo;
+import com.folderToXml.exceptions.GeneratorException;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.AttributesImpl;
 
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.sax.SAXTransformerFactory;
 import javax.xml.transform.sax.TransformerHandler;
 import javax.xml.transform.stream.StreamResult;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 
 /**
  * Generates xml document from container-object using SAX model
@@ -26,9 +25,10 @@ public class SaxGenerator implements Generator {
      * @see FolderInfo
      * @param foldInfo This folder data
      * @param outputPath Path where to save xml document
+     * @throws GeneratorException
      */
     @Override
-    public void generate(FolderInfo foldInfo, String outputPath) {
+    public void generate(FolderInfo foldInfo, String outputPath) throws GeneratorException{
         try {
             File f = new File(outputPath);
             FileWriter fw = new FileWriter(f);
@@ -43,12 +43,8 @@ public class SaxGenerator implements Generator {
             handler.startDocument();
             folderGenerator(handler, foldInfo);
             handler.endDocument();
-        } catch (TransformerConfigurationException e) {
-            System.out.println("Transformer Configuration Exception: " + e.getMessage());
-        } catch (SAXException e) {
-            System.out.println("SAX Exception: " + e.getMessage());
-        } catch (IOException e) {
-            System.out.println("IO Exception: " + e.getMessage());
+        } catch (Exception e) {
+            throw new GeneratorException(e);
         }
     }
 

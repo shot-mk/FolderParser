@@ -2,10 +2,10 @@ package com.folderToXml.xmlGenerators;
 
 import com.folderToXml.dataHolder.FileInfo;
 import com.folderToXml.dataHolder.FolderInfo;
+import com.folderToXml.exceptions.GeneratorException;
 import com.thoughtworks.xstream.XStream;
 
 import java.io.FileWriter;
-import java.io.IOException;
 
 /**
  * Generates xml document from container-object using Xstream
@@ -18,9 +18,10 @@ public class XstreamGenerator implements Generator {
      * @see FolderInfo
      * @param foldInfo This folder data
      * @param outputPath Path where to save xml document
+     * @throws GeneratorException
      */
     @Override
-    public void generate(FolderInfo foldInfo, String outputPath) {
+    public void generate(FolderInfo foldInfo, String outputPath) throws GeneratorException{
         XStream xstream = new XStream();
         xstream.processAnnotations(FolderInfo.class);
         xstream.alias("dir", FolderInfo.class);
@@ -35,8 +36,8 @@ public class XstreamGenerator implements Generator {
         try {
             writer = new FileWriter(outputPath);
             writer.write("<?xml version=\"1.1\" encoding=\"UTF-8\" standalone=\"no\"?>\n");
-        } catch (IOException e) {
-            System.out.println("IOException." + e.getMessage());
+        } catch (Exception e) {
+            throw new GeneratorException(e);
         }
         xstream.toXML(foldInfo, writer);
     }
