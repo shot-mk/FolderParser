@@ -9,7 +9,6 @@ import java.io.IOException;
 
 /**
  * Generates xml document from container-object using Xstream
- * @see FolderInfo
  */
 public class XstreamGenerator implements Generator {
 

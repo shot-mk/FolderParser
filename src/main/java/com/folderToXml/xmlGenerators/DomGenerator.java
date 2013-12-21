@@ -16,14 +16,13 @@ import java.io.FileOutputStream;
 
 /**
  * Generates xml document from container-object using DOM model
- * @see FolderInfo
  */
 public class DomGenerator implements Generator {
     /**
      * Generates xml document from container-object  to output path
-     * @see FolderInfo
      * @param foldInfo This folder data
      * @param outputPath Path where to save xml document
+     * @see FolderInfo
      */
     @Override
     public void generate(FolderInfo foldInfo, String outputPath) {
@@ -54,11 +53,11 @@ public class DomGenerator implements Generator {
 
     /**
      * Generates current folder Element  and sets attributes
-     * @see org.w3c.dom.Element
-     * @see org.w3c.dom.Document
-     * @param fInfo current FolderInfo @see FolderInfo
+     * @param fInfo current FolderInfo
      * @param doc current document
      * @return folder Element
+     * @see org.w3c.dom.Element
+     * @see org.w3c.dom.Document
      */
     private Element folderGenerate(FolderInfo fInfo, Document doc) {
         Element folder = doc.createElement("dir");

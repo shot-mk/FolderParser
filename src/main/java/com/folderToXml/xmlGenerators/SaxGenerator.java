@@ -18,7 +18,6 @@ import java.io.IOException;
 
 /**
  * Generates xml document from container-object using SAX model
- * @see FolderInfo
  */
 public class SaxGenerator implements Generator {
 

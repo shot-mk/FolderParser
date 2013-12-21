@@ -9,7 +9,6 @@ import java.io.File;
 
 /**
  * Generates xml document from container-object using JAXB model
- * @see FolderInfo
  */
 public class JaxbGenerator implements Generator {
 
