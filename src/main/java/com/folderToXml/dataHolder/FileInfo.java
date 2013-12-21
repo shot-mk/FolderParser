@@ -1,12 +1,10 @@
 package com.folderToXml.dataHolder;
 
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * File data holder model
  */
-@XmlRootElement
 public class FileInfo {
     /** File name  */
     @XmlAttribute
@@ -26,5 +24,21 @@ public class FileInfo {
 
     public FileInfo() {
         throw new NullPointerException(); //no-arg constructor for jaxb
+    }
+
+    public boolean equals(Object File){
+        FileInfo otherFile = (FileInfo) File;
+        if(!this.name.equals(otherFile.name)) {
+            return false;
+        }
+        if(this.size != otherFile.size) {
+            return false;
+        }
+        if(this.type != null && otherFile.type != null) {
+            if(!this.type.equals(otherFile.type)) {
+                return false;
+            }
+        }
+        return true;
     }
 }

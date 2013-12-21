@@ -18,7 +18,7 @@ public class FolderParser {
      * @param path Folder path
      * @return Container-object with information about the folder
      */
-    public FolderInfo parse(String path) {
+    public static FolderInfo parse(String path) {
         return getFolderInfo(path);
     }
 
@@ -28,7 +28,7 @@ public class FolderParser {
      * @param path Folder path
      * @return  Container-object for this folder
      */
-    private FolderInfo getFolderInfo(String path) {
+    private static FolderInfo getFolderInfo(String path) {
         File folder = new File(path);
         String name = folder.getName();
         File[] content = folder.listFiles();
@@ -66,7 +66,7 @@ public class FolderParser {
      * @return  Container-object for this file
      * @throws IOException if file with this path don't exist
      */
-    private FileInfo getFileInfo(String fpath) throws IOException {
+    private static FileInfo getFileInfo(String fpath) throws IOException {
         File file = new File(fpath);
         String path = fpath;
         String name;
@@ -82,5 +82,9 @@ public class FolderParser {
         long size = file.length();
         return new FileInfo(name, type, size);
     }
+
+
+
+
 
 }

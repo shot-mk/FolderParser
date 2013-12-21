@@ -39,4 +39,37 @@ public class FolderInfo {
     public FolderInfo() {
         throw new NullPointerException(); //no-arg constructor for jaxb
     }
+
+    public boolean equals(Object Info){
+        FolderInfo otherInfo = (FolderInfo)Info;
+        if(!this.name.equals(otherInfo.name)){
+            return false;
+        }
+        if(this.isEmpty != otherInfo.isEmpty){
+            return false;
+        }
+        if(this.files.size() != otherInfo.files.size()) {
+            return false;
+        }
+        if(!this.isEmpty) {
+            for (int i = 0; i < this.files.size(); i++) {
+                if(!this.files.get(i).equals(otherInfo.files.get(i))) {
+                    return false;
+                }
+            }
+        }
+        if(this.folders != null && otherInfo.folders != null) {
+            if(this.folders.size() != otherInfo.folders.size()) {
+                return false;
+            }
+        }
+        if(this.folders != null && otherInfo.folders != null){
+            for (int i = 0; i < this.folders.size(); i++) {
+                if(!this.folders.get(i).equals(otherInfo.folders.get(i))){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 }
