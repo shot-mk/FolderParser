@@ -13,19 +13,27 @@ import java.util.List;
  */
 @XmlRootElement(name = "dir")
 public class FolderInfo {
-    /**Folder name  */
+    /**
+     * Folder name
+     */
     @XmlAttribute
     final public String name;
-    /**If  {@code true} - folder is empty, {@code false} - folder isn't empty */
+    /**
+     * If  {@code true} - folder is empty, {@code false} - folder isn't empty
+     */
     @XStreamOmitField
     @XmlTransient
     final public boolean isEmpty;
-    /**Files list in this folder
-     *@see FileInfo
+    /**
+     * Files list in this folder
+     *
+     * @see FileInfo
      */
     @XmlElement(name = "file")
     final public List<FileInfo> files;
-    /**Folders list in this folder */
+    /**
+     * Folders list in this folder
+     */
     @XmlElement(name = "dir")
     final public List<FolderInfo> folders;
 
@@ -43,35 +51,36 @@ public class FolderInfo {
 
     /**
      * Method check if  objects are equals
+     *
      * @param Info input object
      * @return {code true} if objects are equal, {code false} if objects not equal
      */
-    public boolean equals(Object Info){
-        FolderInfo otherInfo = (FolderInfo)Info;
-        if(!this.name.equals(otherInfo.name)){
+    public boolean equals(Object Info) {
+        FolderInfo otherInfo = (FolderInfo) Info;
+        if (!this.name.equals(otherInfo.name)) {
             return false;
         }
-        if(this.isEmpty != otherInfo.isEmpty){
+        if (this.isEmpty != otherInfo.isEmpty) {
             return false;
         }
-        if(this.files.size() != otherInfo.files.size()) {
+        if (this.files.size() != otherInfo.files.size()) {
             return false;
         }
-        if(!this.isEmpty) {
+        if (!this.isEmpty) {
             for (int i = 0; i < this.files.size(); i++) {
-                if(!this.files.get(i).equals(otherInfo.files.get(i))) {
+                if (!this.files.get(i).equals(otherInfo.files.get(i))) {
                     return false;
                 }
             }
         }
-        if(this.folders != null && otherInfo.folders != null) {
-            if(this.folders.size() != otherInfo.folders.size()) {
+        if (this.folders != null && otherInfo.folders != null) {
+            if (this.folders.size() != otherInfo.folders.size()) {
                 return false;
             }
         }
-        if(this.folders != null && otherInfo.folders != null){
+        if (this.folders != null && otherInfo.folders != null) {
             for (int i = 0; i < this.folders.size(); i++) {
-                if(!this.folders.get(i).equals(otherInfo.folders.get(i))){
+                if (!this.folders.get(i).equals(otherInfo.folders.get(i))) {
                     return false;
                 }
             }

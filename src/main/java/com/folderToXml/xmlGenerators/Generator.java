@@ -5,6 +5,7 @@ import com.folderToXml.exceptions.GeneratorException;
 
 /**
  * Generates xml document from container object
+ *
  * @throws GeneratorException
  * @see FolderInfo
  */

@@ -14,12 +14,13 @@ public class JaxbGenerator implements Generator {
 
     /**
      * Generates xml document from container-object  to output path
-     * @see FolderInfo
-     * @param foldInfo This folder data
+     *
+     * @param foldInfo   This folder data
      * @param outputPath Path where to save xml document
      * @throws GeneratorException
+     * @see FolderInfo
      */
-    public void generate(FolderInfo foldInfo, String outputPath) throws GeneratorException{
+    public void generate(FolderInfo foldInfo, String outputPath) throws GeneratorException {
         try {
             File file = new File(outputPath);
             JAXBContext jaxbContext = JAXBContext.newInstance(FolderInfo.class);

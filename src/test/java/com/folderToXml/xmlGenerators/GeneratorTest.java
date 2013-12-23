@@ -23,7 +23,7 @@ public class GeneratorTest {
         generator.generate(fInfo, "src/test/resources/GeneratorResults/domXml.xml");
         String expected = Tools.getResourceAsString("src/test/resources/Patterns/DomPattern.xml");
         String actual = Tools.getResourceAsString("src/test/resources/GeneratorResults/domXml.xml");
-        Diff diff =  new Diff(actual,expected);
+        Diff diff = new Diff(actual, expected);
         Tools.showXmlDiff(diff);
         assertTrue(diff.similar());
 
@@ -36,7 +36,7 @@ public class GeneratorTest {
         generator.generate(fInfo, "src/test/resources/GeneratorResults/saxXml.xml");
         String expected = Tools.getResourceAsString("src/test/resources/Patterns/SaxPattern.xml");
         String actual = Tools.getResourceAsString("src/test/resources/GeneratorResults/saxXml.xml");
-        Diff diff =  new Diff(actual,expected);
+        Diff diff = new Diff(actual, expected);
         Tools.showXmlDiff(diff);
         assertTrue(diff.similar());
     }
@@ -48,7 +48,7 @@ public class GeneratorTest {
         generator.generate(fInfo, "src/test/resources/GeneratorResults/jaxbXml.xml");
         String expected = Tools.getResourceAsString("src/test/resources/Patterns/JaxbPattern.xml");
         String actual = Tools.getResourceAsString("src/test/resources/GeneratorResults/jaxbXml.xml");
-        Diff diff =  new Diff(actual,expected);
+        Diff diff = new Diff(actual, expected);
         Tools.showXmlDiff(diff);
         assertTrue(diff.similar());
     }
@@ -60,13 +60,9 @@ public class GeneratorTest {
         generator.generate(fInfo, "src/test/resources/GeneratorResults/xstreamXml.xml");
         String expected = Tools.getResourceAsString("src/test/resources/Patterns/XstreamPattern.xml");
         String actual = Tools.getResourceAsString("src/test/resources/GeneratorResults/xstreamXml.xml");
-        Diff diff =  new Diff(actual,expected);
+        Diff diff = new Diff(actual, expected);
         Tools.showXmlDiff(diff);
         assertTrue(diff.similar());
     }
-
-
-
-
 
 }

@@ -22,13 +22,14 @@ public class SaxGenerator implements Generator {
 
     /**
      * Generates xml document from container-object  to output path
-     * @see FolderInfo
-     * @param foldInfo This folder data
+     *
+     * @param foldInfo   This folder data
      * @param outputPath Path where to save xml document
      * @throws GeneratorException
+     * @see FolderInfo
      */
     @Override
-    public void generate(FolderInfo foldInfo, String outputPath) throws GeneratorException{
+    public void generate(FolderInfo foldInfo, String outputPath) throws GeneratorException {
         try {
             File f = new File(outputPath);
             FileWriter fw = new FileWriter(f);
@@ -50,8 +51,9 @@ public class SaxGenerator implements Generator {
 
     /**
      * Recursive function for writing information to handler
+     *
      * @param handler handler where to write information
-     * @param fInfo object-model, from where to write information
+     * @param fInfo   object-model, from where to write information
      * @return handler with written information about folder
      * @throws SAXException
      */
@@ -61,11 +63,11 @@ public class SaxGenerator implements Generator {
         handler.startElement("", "dir", "dir", nameAtt);
         for (FileInfo file : fInfo.files) {
             AttributesImpl fileAtt = new AttributesImpl();
-            if(file.name!=null){
+            if (file.name != null) {
                 fileAtt.addAttribute("", "name", "name", "CDATA", file.name);
             }
             fileAtt.addAttribute("", "size", "size", "CDATA", file.size + "b");
-            if(file.type != null) {
+            if (file.type != null) {
                 fileAtt.addAttribute("", "type", "type", "CDATA", file.type);
             }
             handler.startElement("", "file", "file", fileAtt);

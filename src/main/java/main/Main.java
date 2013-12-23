@@ -9,7 +9,7 @@ import com.folderToXml.xmlGenerators.JaxbGenerator;
 import java.io.File;
 
 public class Main {
-    public static void main(String args[])  {
+    public static void main(String args[]) {
         File folder = new File("testfolder");
         //FolderParser parser = new FolderParser();
         FolderInfo fInfo = FolderParser.parse("src/test/resources/testfolder");

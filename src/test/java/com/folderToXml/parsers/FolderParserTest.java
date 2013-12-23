@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class FolderParserTest {
     @Test
     public void testParse() throws Exception {
-        List<FileInfo> rootFolderFiles= new LinkedList<FileInfo>();
+        List<FileInfo> rootFolderFiles = new LinkedList<FileInfo>();
         rootFolderFiles.add(new FileInfo("testtxt", "text/plain", 5303));
         List<FolderInfo> rootIncludedFolders = new LinkedList<FolderInfo>();
         List<FileInfo> includedFolder1Files = new LinkedList<>();

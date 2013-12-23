@@ -15,13 +15,14 @@ public class XstreamGenerator implements Generator {
 
     /**
      * Generates xml document from container-object  to output path
-     * @see FolderInfo
-     * @param foldInfo This folder data
+     *
+     * @param foldInfo   This folder data
      * @param outputPath Path where to save xml document
      * @throws GeneratorException
+     * @see FolderInfo
      */
     @Override
-    public void generate(FolderInfo foldInfo, String outputPath) throws GeneratorException{
+    public void generate(FolderInfo foldInfo, String outputPath) throws GeneratorException {
         XStream xstream = new XStream();
         xstream.processAnnotations(FolderInfo.class);
         xstream.alias("dir", FolderInfo.class);

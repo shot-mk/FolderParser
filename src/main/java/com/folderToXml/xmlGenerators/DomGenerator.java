@@ -19,13 +19,14 @@ import java.io.FileOutputStream;
 public class DomGenerator implements Generator {
     /**
      * Generates xml document from container-object  to output path
-     * @param foldInfo This folder data
+     *
+     * @param foldInfo   This folder data
      * @param outputPath Path where to save xml document
      * @throws GeneratorException
      * @see FolderInfo
      */
     @Override
-    public void generate(FolderInfo foldInfo, String outputPath) throws GeneratorException{
+    public void generate(FolderInfo foldInfo, String outputPath) throws GeneratorException {
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
@@ -45,8 +46,9 @@ public class DomGenerator implements Generator {
 
     /**
      * Generates current folder Element  and sets attributes
+     *
      * @param fInfo current FolderInfo
-     * @param doc current document
+     * @param doc   current document
      * @return folder Element
      * @see org.w3c.dom.Element
      * @see org.w3c.dom.Document

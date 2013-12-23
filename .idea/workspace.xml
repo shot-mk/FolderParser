@@ -2,29 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8439e08-b52e-4514-91b9-2313c2876277" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/Patterns/DomPattern.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/folderToXml/xmlGenerators/GeneratorTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/Patterns/JaxbPattern.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlunit_xmlunit_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/Patterns/SaxPattern.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/folderToXml/xmlGenerators/Tools.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/Patterns/XstreamPattern.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/GeneratorResults/domXml.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/GeneratorResults/jaxbXml.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/GeneratorResults/saxXml.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/GeneratorResults/xstreamXml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/DomGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/DomGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/dataHolder/FileInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/dataHolder/FileInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/dataHolder/FolderInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/dataHolder/FolderInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FolderParser.iml" afterPath="$PROJECT_DIR$/FolderParser.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/exceptions/GeneratorException.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/exceptions/GeneratorException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/parsers/FolderParser.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/parsers/FolderParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/folderToXml/parsers/FolderParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/folderToXml/parsers/FolderParserTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/Generator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/Generator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/folderToXml/xmlGenerators/GeneratorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/folderToXml/xmlGenerators/GeneratorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/JaxbGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/JaxbGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/SaxGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/SaxGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/Patterns/SaxPattern.xml" afterPath="$PROJECT_DIR$/src/test/resources/Patterns/SaxPattern.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/XstreamGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/XstreamGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/Patterns/XstreamPattern.xml" afterPath="$PROJECT_DIR$/src/test/resources/Patterns/XstreamPattern.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/GeneratorResults/saxXml.xml" afterPath="$PROJECT_DIR$/src/test/resources/GeneratorResults/saxXml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testfolder/includedTestFolder2/testhtml.html" afterPath="$PROJECT_DIR$/src/test/resources/testfolder/includedTestFolder2/testhtml.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/GeneratorResults/xstreamXml.xml" afterPath="$PROJECT_DIR$/src/test/resources/GeneratorResults/xstreamXml.xml" />
     </list>
     <ignored path="FolderParser.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b8439e08-b52e-4514-91b9-2313c2876277" time="1387797565777" ignored="false" />
+    <file path="/Dummy.txt" changelist="b8439e08-b52e-4514-91b9-2313c2876277" time="1387804050413" ignored="false" />
     <file path="/DomGenerator.java" changelist="b8439e08-b52e-4514-91b9-2313c2876277" time="1387614411974" ignored="false" />
     <file path="/Generator.java" changelist="b8439e08-b52e-4514-91b9-2313c2876277" time="1387613810872" ignored="false" />
     <file path="/SaxGenerator.java" changelist="b8439e08-b52e-4514-91b9-2313c2876277" time="1387803298498" ignored="false" />
@@ -103,10 +101,46 @@
       <file leaf-file-name="GeneratorTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/folderToXml/xmlGenerators/GeneratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="53" selection-start="2917" selection-end="2917" vertical-scroll-proportion="0.6953405">
+            <state line="66" column="0" selection-start="2915" selection-end="2915" vertical-scroll-proportion="2.0107527">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="domXml.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/GeneratorResults/domXml.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="354" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jaxbXml.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/GeneratorResults/jaxbXml.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="saxXml.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/GeneratorResults/saxXml.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FolderParserTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/folderToXml/parsers/FolderParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="13" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,46 +181,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GeneratorException.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/exceptions/GeneratorException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="81" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="46" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FolderParser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/parsers/FolderParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="21" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SaxGenerator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/SaxGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="8" selection-start="3167" selection-end="3167" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ToStream.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/com/sun/org/apache/xml/internal/serializer/ToStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1966" column="0" selection-start="63509" selection-end="63509" vertical-scroll-proportion="0.0">
+            <state line="17" column="46" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -345,126 +343,6 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testfolder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testfolder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includedTestFolder2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testfolder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includedTestFolder1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Patterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GeneratorResults" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -537,72 +415,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="folderToXml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FolderParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -822,12 +634,16 @@
       <created>1387625889025</created>
       <updated>1387625889025</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="123">
+      <created>1387804053423</created>
+      <updated>1387804053423</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -843,7 +659,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15882353" sideWeight="0.67296994" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37165776" sideWeight="0.67296994" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37165776" sideWeight="0.67296994" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32703003" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -918,34 +734,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/XstreamGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="34" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="29" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/GeneratorResults/domXml.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="354" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/DomGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="20" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0">
@@ -978,14 +766,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/parsers/FolderParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="21" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.0">
+        <state line="82" column="21" selection-start="2687" selection-end="2687" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/folderToXml/xmlGenerators/SaxGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="8" selection-start="3167" selection-end="3167" vertical-scroll-proportion="0.0">
+        <state line="77" column="8" selection-start="3191" selection-end="3191" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1020,14 +808,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="46" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
+        <state line="17" column="46" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/GeneratorResults/domXml.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="354" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/GeneratorResults/jaxbXml.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/GeneratorResults/saxXml.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/folderToXml/parsers/FolderParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/folderToXml/xmlGenerators/GeneratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="53" selection-start="2917" selection-end="2917" vertical-scroll-proportion="0.6953405">
+        <state line="66" column="0" selection-start="2915" selection-end="2915" vertical-scroll-proportion="2.0107527">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

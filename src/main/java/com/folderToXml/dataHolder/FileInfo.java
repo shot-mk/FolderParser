@@ -6,13 +6,19 @@ import javax.xml.bind.annotation.XmlAttribute;
  * File data holder model
  */
 public class FileInfo {
-    /** File name  */
+    /**
+     * File name
+     */
     @XmlAttribute
     public final String name;
-    /** MIME - type of the file */
+    /**
+     * MIME - type of the file
+     */
     @XmlAttribute
     public final String type;
-    /** File size bytes */
+    /**
+     * File size bytes
+     */
     @XmlAttribute
     public final long size;
 
@@ -28,19 +34,20 @@ public class FileInfo {
 
     /**
      * Method check if  objects are equals
+     *
      * @param File input object
      * @return {code true} if objects are equal, {code false} if objects not equal
      */
-    public boolean equals(Object File){
+    public boolean equals(Object File) {
         FileInfo otherFile = (FileInfo) File;
-        if(!this.name.equals(otherFile.name)) {
+        if (!this.name.equals(otherFile.name)) {
             return false;
         }
-        if(this.size != otherFile.size) {
+        if (this.size != otherFile.size) {
             return false;
         }
-        if(this.type != null && otherFile.type != null) {
-            if(!this.type.equals(otherFile.type)) {
+        if (this.type != null && otherFile.type != null) {
+            if (!this.type.equals(otherFile.type)) {
                 return false;
             }
         }

@@ -15,6 +15,7 @@ import java.util.List;
 public class FolderParser {
     /**
      * Calls a function that collect information about the folder
+     *
      * @param path Folder path
      * @return Container-object with information about the folder
      */
@@ -24,9 +25,10 @@ public class FolderParser {
 
     /**
      * Collect information about this folder and write it to container-object
-     * @see FolderInfo
+     *
      * @param path Folder path
-     * @return  Container-object for this folder
+     * @return Container-object for this folder
+     * @see FolderInfo
      */
     private static FolderInfo getFolderInfo(String path) {
         File folder = new File(path);
@@ -59,12 +61,14 @@ public class FolderParser {
         }
         return new FolderInfo(name, isEmpty, files, folders);
     }
+
     /**
      * Collect information about this file and write it to container-object
-     * @see FileInfo
+     *
      * @param fpath File path
-     * @return  Container-object for this file
+     * @return Container-object for this file
      * @throws IOException if file with this path don't exist
+     * @see FileInfo
      */
     private static FileInfo getFileInfo(String fpath) throws IOException {
         File file = new File(fpath);
@@ -82,9 +86,6 @@ public class FolderParser {
         long size = file.length();
         return new FileInfo(name, type, size);
     }
-
-
-
 
 
 }
