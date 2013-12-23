@@ -48,16 +48,26 @@ public class SaxGenerator implements Generator {
         }
     }
 
-
+    /**
+     * Recursive function for writing information to handler
+     * @param handler handler where to write information
+     * @param fInfo object-model, from where to write information
+     * @return handler with written information about folder
+     * @throws SAXException
+     */
     private TransformerHandler folderGenerator(TransformerHandler handler, FolderInfo fInfo) throws SAXException {
         AttributesImpl nameAtt = new AttributesImpl();
         nameAtt.addAttribute("", "name", "name", "CDATA", fInfo.name);
         handler.startElement("", "dir", "dir", nameAtt);
         for (FileInfo file : fInfo.files) {
             AttributesImpl fileAtt = new AttributesImpl();
-            fileAtt.addAttribute("", "name", "name", "CDATA", file.name);
+            if(file.name!=null){
+                fileAtt.addAttribute("", "name", "name", "CDATA", file.name);
+            }
             fileAtt.addAttribute("", "size", "size", "CDATA", file.size + "b");
-            fileAtt.addAttribute("", "type", "type", "CDATA", file.type);
+            if(file.type != null) {
+                fileAtt.addAttribute("", "type", "type", "CDATA", file.type);
+            }
             handler.startElement("", "file", "file", fileAtt);
             handler.endElement("", "file", "file");
         }

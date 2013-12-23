@@ -26,6 +26,11 @@ public class FileInfo {
         throw new NullPointerException(); //no-arg constructor for jaxb
     }
 
+    /**
+     * Method check if  objects are equals
+     * @param File input object
+     * @return {code true} if objects are equal, {code false} if objects not equal
+     */
     public boolean equals(Object File){
         FileInfo otherFile = (FileInfo) File;
         if(!this.name.equals(otherFile.name)) {

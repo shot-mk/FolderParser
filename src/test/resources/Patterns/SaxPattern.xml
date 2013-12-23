@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><dir name="testfolder">
+    <file name="testtxt" size="5303b" type="text/plain"/>
+    <dir name="includedTestFolder1">
+        <file name="testpdf" size="9172b"/>
+    </dir>
+    <dir name="includedTestFolder2">
+        <file name="testhtml" size="60398b" type="text/html"/>
+    </dir>
+</dir>

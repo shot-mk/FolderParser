@@ -40,6 +40,12 @@ public class FolderInfo {
         throw new NullPointerException(); //no-arg constructor for jaxb
     }
 
+
+    /**
+     * Method check if  objects are equals
+     * @param Info input object
+     * @return {code true} if objects are equal, {code false} if objects not equal
+     */
     public boolean equals(Object Info){
         FolderInfo otherInfo = (FolderInfo)Info;
         if(!this.name.equals(otherInfo.name)){

@@ -2,7 +2,6 @@ package com.folderToXml.exceptions;
 
 /**
  * Exception caused by generate() method of Generator interface and it implements
- *
  */
 public class GeneratorException extends Exception {
 
